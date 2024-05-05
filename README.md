@@ -1,6 +1,6 @@
 # CodeAssist
 
-# A simple Project which: 
+## A simple Project which: 
 <ol>
   <li> generates valid C++ code given partial C++ code. </li>
   <li> debugs a C++ code of synatitical and logical errors. </li>
