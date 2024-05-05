@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "firefox",
+            "name": "launch localhost",
+            "request": "launch",
+            "url": "http://localhost:3000"
+        }
+    ]
+}
