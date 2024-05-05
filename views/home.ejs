@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Code Check</title> 
+  
+    <style type="text/css" media="screen"> 
+        body { 
+            background-color: skyblue; 
+            text-decoration-color: white; 
+            font-size: 2em; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <center>
+    <div>
+        <% if (code) { %>
+            <form action="\">
+                <label for="codebox"> Enter C++ Code : </label> <br>
+                <textarea id="code1" name="code" rows="15" cols="50"><%=code %></textarea>
+                <br>
+                <button action="submit" name="action" value="Generate">GENERATE</button>
+                <button action="submit" name="action" value="Debug">DEBUG</button>
+                <button action="submit" name="action" value="Documentation">GET DOCS</button>
+            </form>
+        <% } else { %>
+            <form action="\">
+                <label for="codebox"> Enter Code : </label> <br>
+                <textarea id="code2" name="code" rows="15" cols="50"></textarea>
+                <br>
+                <button action="submit" name="action" value="Generate">GENERATE</button>
+                <button action="submit" name="action" value="Debug">DEBUG</button>
+                <button action="submit" name="action" value="Documentation">GET DOCS</button>
+            </form>
+        <%} %>
+    </div>
+    <br>
+    <br>
+    <div>
+        <textarea id="result" name="result" rows="15" cols="50"><% if (result) { %><%= result %> <% } %>
+        </textarea>
+    </div>
+    </center>
+</body> 
+</html>
